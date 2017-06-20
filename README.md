@@ -33,4 +33,3 @@ iptables -t nat -A PREROUTING -i eth0 -p 47 -j DNAT --to SERVER_IP
 # 配置mtu
 vim /etc/ppp/ip-up # exit 0 之前
 /sbin/ifconfig $1 mtu 1500 #查看相应网卡获取mtu值
-
